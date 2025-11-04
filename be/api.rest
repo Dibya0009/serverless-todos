@@ -1,0 +1,30 @@
+### Get all todos
+GET http://localhost:3000/api/getTodos
+Content-Type: application/json
+
+### Create a new todo
+POST http://localhost:3000/api/addTodo
+Content-Type: application/json
+
+{
+    "title": "Complete project",
+    "description": "Finish the REST API implementation"
+}
+
+### Update a todo (replace the ID with an actual todo ID)
+PUT http://localhost:3000/api/updateTodo
+Content-Type: application/json
+
+{
+    "id": "your-todo-id",
+    "title": "Updated todo title",
+    "completed": true
+}
+
+### Delete a todo (replace the ID with an actual todo ID)
+DELETE http://localhost:3000/api/deleteTodo
+Content-Type: application/json
+
+{
+    "id": "your-todo-id"
+}
